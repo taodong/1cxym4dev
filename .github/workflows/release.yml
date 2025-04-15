@@ -1,0 +1,33 @@
+name: "Release"
+on:
+    push:
+        tags:
+            - "v*"
+
+jobs:
+    build-deploy:
+        name: publish-website
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: 23
+                
+            - name: Install Node.js dependencies
+              run: npm install
+
+            - name: Build the website
+              run: npm run ghdeploy
+
+             # Deploy to GitHub pages
+            - name: Deploy to GitHub pages
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: dist
+      
+
