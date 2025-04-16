@@ -1,13 +1,13 @@
 <template>
     <!-- Heading Section -->
     <PageHeader :id="props.id"
-                title="*Duotail* Landing Page"
-                subtitle="An Email Service Can Change Your Life"
+                title="*Duotail* Email Address Cluster"
+                subtitle="We offer email address clusters to protect your personal mailbox."
                 logo-url="images/logo/logo-128x128.png"
                 :show-button="true"
                 button-icon="fa-solid fa-search"
                 button-label="Find Out More"
-                button-url="#about"/>
+                button-url="#faq"/>
 </template>
 
 <script setup>
