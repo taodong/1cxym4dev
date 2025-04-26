@@ -16,8 +16,6 @@
                                 answer="<p>We believe Ivery internet user should be allowed to voice their opinions using two identities depending on situation, their real identity and an alias. So we designed our service to offer two types of email address clusters: <b>alias</b> and </b>personal</b>.</p><p>Functional wise, the only difference between these two clusters are <b>alias</b> cluster has an extra prefix header <b>a_</b>. For exmaple <b>harry.potter@duotail.com</b> is a personal email while <b>a_harry.potter@duotail.com</b> is an alias email. For personal email clusters, we will verify that the customer is a real person.</p>"/>
 
 
-                <ItemFaqQuestion question="What steps should I follow to add a new object to the theme?"
-                                 answer="To add a new section to the theme, start by creating a <b>Vue component</b> in the <i>sections</i> folder. Use the existing components as a guide to keep the design and functionality consistent. Inside the new component, define the necessary data like <b>texts, links, and other content</b>. Once you've set everything up, your new section should seamlessly integrate into the theme."/>
             </ArticleFaq>
         </PageSectionContent>
     </PageSection>
