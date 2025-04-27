@@ -54,7 +54,7 @@ section.foxy-section {
 }
 
 section.foxy-section-primary {
-    background-color: lighten($primary, 42%);
+    background-color: lighten($primary, 38%);
 }
 
 section.foxy-section-dark {
