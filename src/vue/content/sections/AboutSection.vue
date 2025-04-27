@@ -1,6 +1,6 @@
 <template>
     <!-- About Section -->
-    <PageSection variant="default"
+    <PageSection variant="primary"
                  :id="props.id">
         <!-- Title -->
         <PageSectionHeader title="*About* Template"
