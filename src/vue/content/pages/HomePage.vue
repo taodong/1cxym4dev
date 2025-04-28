@@ -17,11 +17,12 @@ import HeroSection from "/src/vue/content/sections/HeroSection.vue"
 // import ReviewsSection from "/src/vue/content/sections/ReviewsSection.vue"
 import ServicesSection from "/src/vue/content/sections/ServicesSection.vue"
 // import TeamSection from "/src/vue/content/sections/TeamSection.vue"
+import PriceSection from "/src/vue/content/sections/PriceSection.vue"
 
 const sections = [
     new SectionInfo('hero',         HeroSection,            null,           null),
     // new SectionInfo('about',        AboutSection,           'About',        'fa-solid fa-file'),
-    new SectionInfo('services',     ServicesSection,        'Services',     'fa-solid fa-wrench'),
+    new SectionInfo('price',     PriceSection,        'Pricing',     'fa-solid fa-wrench'),
     // new SectionInfo('history',      HistorySection,         'History',      'fa-solid fa-clock'),
     // new SectionInfo('featured',     FeaturedProjectSection, 'Zork',         'fa-solid fa-bolt'),
     // new SectionInfo('portfolio',    PortfolioSection,       'Portfolio',    'fa-solid fa-camera'),
