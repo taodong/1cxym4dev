@@ -1,5 +1,5 @@
 <template>
-    <article class="foxy-project-grid-article row g-0 text-center">
+    <article class="duotail-project-grid-article row g-0 text-center">
         <!-- Filters -->
         <div class="col-12 mb-2">
             <FilterTabs :items="categories"
@@ -7,11 +7,11 @@
         </div>
 
         <!-- Items -->
-        <div class="col-12 foxy-project-grid-container">
-            <div class="foxy-project-grid row mb-4">
+        <div class="col-12 duotail-project-grid-container">
+            <div class="duotail-project-grid row mb-4">
                 <div v-for="(item, index) in filteredItems"
                      :key="index"
-                     class="foxy-project-grid-item-wrapper col-4 col-lg-3 text-center">
+                     class="duotail-project-grid-item-wrapper col-4 col-lg-3 text-center">
                     <component :is="item"
                                :index="index"
                                :transition-count="refreshTimes"/>
@@ -73,7 +73,7 @@ const _onCategorySelected = (categoryId) => {
     }
 }
 
-div.foxy-project-grid {
+div.duotail-project-grid {
     min-height: calc(var(--project-logo-size) * 3.5);
 }
 </style>

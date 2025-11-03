@@ -7,10 +7,10 @@
 <script setup>
 import PageWrapper from "/src/vue/components/layout/PageWrapper.vue"
 import SectionInfo from "/src/models/SectionInfo.js"
-import PolicySection from "/src/vue/content/sections/PolicySection.vue"
+import EmailInfoSection from "/src/vue/content/sections/EmailInfoSection.vue"
 
 const sections = [
-    new SectionInfo('policy', PolicySection)
+    new SectionInfo('email-info', EmailInfoSection)
 ]
 </script>
 

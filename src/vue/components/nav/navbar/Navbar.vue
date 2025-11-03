@@ -1,7 +1,7 @@
 <template>
-    <nav class="foxy-navbar"
-         :class="shouldExpand ? `foxy-navbar-expanded` : `foxy-navbar-compressed`">
-        <div class="foxy-navbar-container container-xxl">
+    <nav class="duotail-navbar"
+         :class="shouldExpand ? `duotail-navbar-expanded` : `duotail-navbar-compressed`">
+        <div class="duotail-navbar-container container-xxl">
             <Link :url="brandUrl">
                 <NavbarBrand :logo="brandLogo"
                              :label="brandLabel"
@@ -72,7 +72,7 @@ const _onLinkClicked = () => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-nav.foxy-navbar {
+nav.duotail-navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -91,7 +91,7 @@ nav.foxy-navbar {
     }
 }
 
-nav.foxy-navbar-expanded {
+nav.duotail-navbar-expanded {
     @include media-breakpoint-up(lg) {
         background-color: rgba(black, 0.01);
         padding: 15px 0;
@@ -101,7 +101,7 @@ nav.foxy-navbar-expanded {
     }
 }
 
-div.foxy-navbar-container {
+div.duotail-navbar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;

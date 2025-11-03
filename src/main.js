@@ -5,6 +5,7 @@ import App from "/src/vue/stack/App.vue"
 import HomePage from "/src/vue/content/pages/HomePage.vue"
 import LicensePage from "/src/vue/content/pages/LicensePage.vue"
 import PolicyPage from "/src/vue/content/pages/PolicyPage.vue"
+import EmailInfoPage from "/src/vue/content/pages/EmailInfoPage.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,36 @@ const router = createRouter({
             props: {
                 label: "Privacy Policy",
                 faIcon: "fa-solid fa-hammer",
+                inPageNavbar: false,
+                shouldAlwaysPreload: false,
+                breadcrumbs: [
+                    "/"
+                ]
+            }
+        },
+
+        {
+            path: "/license",
+            name: "license",
+            component: LicensePage,
+            props: {
+                label: "License",
+                faIcon: "fa-solid fa-copy",
+                inPageNavbar: false,
+                shouldAlwaysPreload: false,
+                breadcrumbs: [
+                    "/"
+                ]
+            }
+        },
+
+        {
+            path: "/email-info",
+            name: "email-info",
+            component: EmailInfoPage,
+            props: {
+                label: "Email Information",
+                faIcon: "fa-solid fa-book-open",
                 inPageNavbar: false,
                 shouldAlwaysPreload: false,
                 breadcrumbs: [

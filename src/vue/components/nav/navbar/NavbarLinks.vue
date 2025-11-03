@@ -1,14 +1,14 @@
 <template>
-    <div class="foxy-navbar-links-wrapper">
-        <ul class="foxy-navbar-links" :class="`${collapsed ? 'collapsed' : ''}`">
+    <div class="duotail-navbar-links-wrapper">
+        <ul class="duotail-navbar-links" :class="`${collapsed ? 'collapsed' : ''}`">
             <li v-for="link in parsedLinks">
                 <Link :url="link.path">
-                    <button class="foxy-nav-link"
+                    <button class="duotail-nav-link"
                             @click="_onLinkClicked"
                             :class="link.buttonClass">
                         <i v-if="link.faIcon"
                            :class="link.faIcon"
-                           class="foxy-nav-link-icon"/>
+                           class="duotail-nav-link-icon"/>
 
                         <span>
                             {{link.label}}
@@ -73,7 +73,7 @@ const _onLinkClicked = () => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-ul.foxy-navbar-links {
+ul.duotail-navbar-links {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -85,13 +85,13 @@ ul.foxy-navbar-links {
     }
 }
 
-ul.foxy-navbar-links.collapsed {
+ul.duotail-navbar-links.collapsed {
     @include media-breakpoint-down(lg) {
         display: none;
     }
 }
 
-button.foxy-nav-link {
+button.duotail-nav-link {
     background-color: transparent;
     border: 0;
     padding: 0 0 0 1.2rem;
@@ -120,7 +120,7 @@ button.foxy-nav-link {
     }
 }
 
-i.foxy-nav-link-icon {
+i.duotail-nav-link-icon {
     display: none;
 
     min-width: 1.4rem;
@@ -135,16 +135,16 @@ i.foxy-nav-link-icon {
     }
 }
 
-button.foxy-nav-link.hidden {
+button.duotail-nav-link.hidden {
    @include media-breakpoint-down(lg) {
        opacity: 0;
        margin-left: 80px;
    }
 }
 
-button.foxy-nav-link:hover, button.foxy-nav-link.active {
+button.duotail-nav-link:hover, button.duotail-nav-link.active {
     color: lighten($primary, 5%);
-    i.foxy-nav-link-icon {
+    i.duotail-nav-link-icon {
         color: lighten($primary, 25%);
     }
 }

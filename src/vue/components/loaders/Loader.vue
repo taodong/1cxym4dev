@@ -1,14 +1,14 @@
 <template>
     <!-- Loader Wrapper -->
     <div v-if="visible && currentStep"
-         id="foxy-loader"
-         class="foxy-loader"
+         id="duotail-loader"
+         class="duotail-loader"
          :class="{
-            'foxy-loader-tween-in': currentStep === Steps.WILL_ENTER,
-            'foxy-loader-tween-out': currentStep === Steps.LEAVING
+            'duotail-loader-tween-in': currentStep === Steps.WILL_ENTER,
+            'duotail-loader-tween-out': currentStep === Steps.LEAVING
          }">
         <!-- Loader Content -->
-        <div class="foxy-loader-content">
+        <div class="duotail-loader-content">
             <ImageView src="images/logo/logo-small.png"
                        alt="Logo"
                        class="image-view-logo"
@@ -18,15 +18,15 @@
                        @completed="_onLogoLoaded"
                        :spinner-enabled="false"/>
 
-            <div class="foxy-loader-progress-display"
+            <div class="duotail-loader-progress-display"
                  :class="{
-                    'foxy-loader-progress-display-hidden': currentStep <  Steps.ANIMATING_PROGRESS,
+                    'duotail-loader-progress-display-hidden': currentStep <  Steps.ANIMATING_PROGRESS,
                     'transition-none': currentStep < Steps.ANIMATING_PROGRESS
                  }">
                 <p class="percentage text-2"
                    v-html="`${percentage}%`"/>
 
-                <ProgressBar class="foxy-loader-progress-bar"
+                <ProgressBar class="duotail-loader-progress-bar"
                              :percentage="percentage"/>
             </div>
         </div>
@@ -155,7 +155,7 @@ const _executeWaitingForCompletionStep = () => {
 }
 
 const _updateProgress = (dt) => {
-    const isPageLoaded = Boolean(document.querySelector('.foxy-page-wrapper'))
+    const isPageLoaded = Boolean(document.querySelector('.duotail-page-wrapper'))
 
     loadingTime.value += isPageLoaded ?
         dt :
@@ -234,7 +234,7 @@ const _executeLeavingStep = () => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-loader {
+div.duotail-loader {
     position: fixed;
     z-index: 100;
     user-select: none;
@@ -264,7 +264,7 @@ div.foxy-loader {
     }
 }
 
-div.foxy-loader-content {
+div.duotail-loader-content {
     color: $text-normal-contrast;
     text-align: center;
     padding-bottom: 5rem;
@@ -281,7 +281,7 @@ div.image-view-logo {
     }
 }
 
-div.foxy-loader-progress-display {
+div.duotail-loader-progress-display {
     margin-top: 5px;
     overflow: hidden;
     z-index: 5;
@@ -298,7 +298,7 @@ div.foxy-loader-progress-display {
         font-family: 'Lato', sans-serif;
     }
 
-    .foxy-loader-progress-bar {
+    .duotail-loader-progress-bar {
         max-width: 55px;
         margin: 0 auto;
     }

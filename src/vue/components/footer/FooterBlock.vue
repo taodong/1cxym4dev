@@ -1,7 +1,7 @@
 <template>
-    <div class="foxy-footer-block" :class="className">
+    <div class="duotail-footer-block" :class="className">
         <div class="container-xxl">
-            <div v-if="row" class="row foxy-footer-row">
+            <div v-if="row" class="row duotail-footer-row">
                 <slot/>
             </div>
 
@@ -20,7 +20,7 @@ const props = defineProps({
 
 const className = computed(() => {
     return props.darken ?
-        "foxy-footer-block-darken" :
+        "duotail-footer-block-darken" :
         ""
 })
 </script>
@@ -28,7 +28,7 @@ const className = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-footer-block {
+div.duotail-footer-block {
     min-height: 40px;
     background-color: $footer-bg-color;
     padding: 1rem 0;
@@ -38,7 +38,7 @@ div.foxy-footer-block {
     }
 }
 
-div.foxy-footer-row {
+div.duotail-footer-row {
     padding: 1rem 0;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-    <article class="foxy-testimonials">
+    <article class="duotail-testimonials">
         <!-- Swiper -->
         <swiper
-            class="foxy-testimonials-swiper px-1"
+            class="duotail-testimonials-swiper px-1"
             :slidesPerView="3"
             :spaceBetween="20"
             :pagination="{clickable: true}"

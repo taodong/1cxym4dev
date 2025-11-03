@@ -1,12 +1,12 @@
 <template>
-    <div class="foxy-testimonial-item card h-100">
+    <div class="duotail-testimonial-item card h-100">
         <!-- Header -->
         <div class="card-header">
             <ImageView :src="props.image"
                        :alt="props.title"
-                       class="foxy-testimonial-thumbnail"/>
+                       class="duotail-testimonial-thumbnail"/>
 
-            <h4 class="foxy-testimonial-title ms-3 mt-2"
+            <h4 class="duotail-testimonial-title ms-3 mt-2"
                 v-html="parsedTitle"/>
         </div>
 
@@ -15,7 +15,7 @@
         </div>
 
         <div class="card-footer">
-            <p class="foxy-testimonial-author text-3">
+            <p class="duotail-testimonial-author text-3">
                 <span class="text-primary me-2">—</span>
 
                 <span v-html="parsedAuthor"/>
@@ -61,7 +61,7 @@ const parsedAuthor = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-testimonial-item {
+div.duotail-testimonial-item {
     @include generate-dynamic-styles-with-hash((
         xxxl: (min-height: calc(100% - 25px), padding: 15px),
         md:   (min-height: 30vh)
@@ -81,7 +81,7 @@ div.card-header {
     align-items: center;
 }
 
-div.foxy-testimonial-thumbnail {
+div.duotail-testimonial-thumbnail {
     --icon-size:60px;
     @include media-breakpoint-down(sm) {--icon-size: 50px;}
 

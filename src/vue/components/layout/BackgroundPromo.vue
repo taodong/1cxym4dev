@@ -1,6 +1,6 @@
 <template>
-    <div class="foxy-promo-background">
-        <div :class="`foxy-promo-background-overlay-${faded ? `faded` : `default`}`"/>
+    <div class="duotail-promo-background">
+        <div :class="`duotail-promo-background-overlay-${faded ? `faded` : `default`}`"/>
     </div>
 </template>
 
@@ -13,7 +13,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-promo-background {
+div.duotail-promo-background {
     position: absolute;
     height: calc(100% + 4rem);
     width: 100%;
@@ -24,7 +24,7 @@ div.foxy-promo-background {
     background-size: cover;
 }
 
-div.foxy-promo-background-overlay-default {
+div.duotail-promo-background-overlay-default {
     position: relative;
     height: 100%;
     width: 100%;
@@ -33,7 +33,7 @@ div.foxy-promo-background-overlay-default {
     background-image: linear-gradient(180deg, rgba(30, 30, 30, 0.73) 0%, rgba(30, 30, 30, 0.86) 30%, rgba(30, 30, 30, 0.99) 60%, rgba(30, 30, 30, 1) 100%);
 }
 
-div.foxy-promo-background-overlay-faded {
+div.duotail-promo-background-overlay-faded {
     position: relative;
     height: 100%;
     width: 100%;

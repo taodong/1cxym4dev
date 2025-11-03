@@ -1,9 +1,9 @@
 <template>
-    <li class="foxy-timeline-item"
-        :class="trailing ? `foxy-timeline-item-trailing` : ``">
+    <li class="duotail-timeline-item"
+        :class="trailing ? `duotail-timeline-item-trailing` : ``">
         <!-- Image -->
-        <div class="foxy-timeline-image-wrapper"
-             :class="trailing ? `foxy-timeline-image-wrapper-sm` : ``">
+        <div class="duotail-timeline-image-wrapper"
+             :class="trailing ? `duotail-timeline-image-wrapper-sm` : ``">
             <ImageView v-if="props.image"
                        :src="props.image"
                        :alt="props.title"/>
@@ -11,8 +11,8 @@
 
         <!-- Panel -->
         <div v-if="title || description"
-             class="foxy-timeline-panel"
-             :class="{'foxy-timeline-panel-inverted': inverted}">
+             class="duotail-timeline-panel"
+             :class="{'duotail-timeline-panel-inverted': inverted}">
             <div class="heading">
                 <!-- Title -->
                 <h3 class="mb-1"
@@ -71,7 +71,7 @@ const date = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-li.foxy-timeline-item {
+li.duotail-timeline-item {
     position: relative;
     min-height: var(--min-item-height);
     margin-bottom: calc(var(--min-item-height)/3);
@@ -87,12 +87,12 @@ li.foxy-timeline-item {
     }
 }
 
-li.foxy-timeline-item-trailing {
+li.duotail-timeline-item-trailing {
     min-height: calc(var(--min-item-height)/3);
     margin-bottom: 0;
 }
 
-div.foxy-timeline-image-wrapper {
+div.duotail-timeline-image-wrapper {
     position: absolute;
     left: calc(var(--line-position) - var(--image-dimensions)/2);
     width: var(--image-dimensions);
@@ -118,7 +118,7 @@ div.foxy-timeline-image-wrapper {
     }
 }
 
-div.foxy-timeline-panel {
+div.duotail-timeline-panel {
     position: relative;
     float: right;
     text-align: left;

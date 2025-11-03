@@ -1,5 +1,5 @@
 <template>
-    <button class="foxy-navbar-toggle"
+    <button class="duotail-navbar-toggle"
             :class="collapsed ? `closed` : `open`"
             type="button">
         <i :class="icon"
@@ -24,7 +24,7 @@ const icon = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-button.foxy-navbar-toggle {
+button.duotail-navbar-toggle {
     $button-size: 40px;
 
     position: absolute;
@@ -59,7 +59,7 @@ button.foxy-navbar-toggle {
     }
 }
 
-button.foxy-navbar-toggle.open {
+button.duotail-navbar-toggle.open {
     background-color: lighten($nav-background-color, 5%);
     border-color: lighten($nav-background-color, 10%);
     color:$white;

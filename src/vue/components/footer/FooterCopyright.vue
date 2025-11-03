@@ -1,5 +1,5 @@
 <template>
-    <p class="foxy-footer-copyright text-1"
+    <p class="duotail-footer-copyright text-1"
        v-html="formattedCopyright"/>
 </template>
 

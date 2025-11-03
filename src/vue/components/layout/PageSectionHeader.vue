@@ -1,7 +1,7 @@
 <template>
-    <div class="foxy-section-header">
-        <h1 class="foxy-section-header-title" v-html="parsedTitle"/>
-        <h5 class="foxy-section-header-subtitle pt-1" v-html="parsedSubtitle"/>
+    <div class="duotail-section-header">
+        <h1 class="duotail-section-header-title" v-html="parsedTitle"/>
+        <h5 class="duotail-section-header-subtitle pt-1" v-html="parsedSubtitle"/>
     </div>
 </template>
 
@@ -29,7 +29,7 @@ const parsedSubtitle = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-section-header {
+div.duotail-section-header {
     @include generate-dynamic-styles-with-hash((
         xxxl: (margin-bottom: 4rem),
         xxl:  (margin-bottom: 3rem),

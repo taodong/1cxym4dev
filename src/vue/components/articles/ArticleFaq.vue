@@ -1,5 +1,5 @@
 <template>
-    <article class="foxy-info-block-faq">
+    <article class="duotail-info-block-faq">
         <!-- Row -->
         <div class="faq-grid">
             <template v-if="$slots.default">
@@ -34,7 +34,7 @@ div.faq-grid {
     }
 }
 
-hr.foxy-info-block-faq-divider {
+hr.duotail-info-block-faq-divider {
     opacity: 0.1;
 }
 </style>

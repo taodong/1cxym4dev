@@ -1,8 +1,8 @@
 <template>
-    <div class="foxy-quote-item px-0 px-lg-3 px-xl-4 mx-auto">
+    <div class="duotail-quote-item px-0 px-lg-3 px-xl-4 mx-auto">
         <!-- Quote Balloon -->
         <div v-if="quote"
-             class="foxy-quote-balloon">
+             class="duotail-quote-balloon">
             <div class="triangle"/>
 
             <QuotedText class="text-muted text-3 mx-3"
@@ -12,10 +12,10 @@
         <!-- Avatar -->
         <ImageView :src="props.image"
                    :alt="props.title"
-                   class="foxy-quote-avatar"/>
+                   class="duotail-quote-avatar"/>
 
         <!-- Texts And Links -->
-        <div class="foxy-quote-about">
+        <div class="duotail-quote-about">
             <h4 class="my-3 mt-2 mt-xxl-3 mb-1"
                 v-html="parsedTitle"/>
 
@@ -61,7 +61,7 @@ const parsedQuote = computed(() => {
 
 $balloon-color: lighten($primary, 46%);
 
-div.foxy-quote-item {
+div.duotail-quote-item {
     min-width: 80%;
     max-width: 400px;
     display: flex;
@@ -70,7 +70,7 @@ div.foxy-quote-item {
     user-select: none;
 }
 
-div.foxy-quote-avatar {
+div.duotail-quote-avatar {
     @include generate-dynamic-styles-with-hash((
         xxxl: (height: 170px),
         xxl:  (height: 150px),
@@ -86,7 +86,7 @@ div.foxy-quote-avatar {
     border: 6px $balloon-color solid;
 }
 
-div.foxy-quote-balloon {
+div.duotail-quote-balloon {
     --height: 180px;
     --padding: 0 12px;
 

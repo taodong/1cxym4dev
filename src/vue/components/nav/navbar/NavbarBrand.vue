@@ -1,17 +1,17 @@
 <template>
-    <div class="foxy-navbar-brand"
+    <div class="duotail-navbar-brand"
          :class="{
-             'foxy-navbar-brand-expand': props.expand
+             'duotail-navbar-brand-expand': props.expand
          }">
 
         <!-- Logo -->
         <img :src="props.logo"
-             alt="foxy-agency-logo"
-             class="img img-fluid foxy-navbar-brand-img"/>
+             alt="duotail-agency-logo"
+             class="img img-fluid duotail-navbar-brand-img"/>
 
         <!-- Label -->
         <span v-html="parsedLabel"
-              class="foxy-navbar-brand-text"/>
+              class="duotail-navbar-brand-text"/>
     </div>
 </template>
 
@@ -35,13 +35,13 @@ const parsedLabel = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-navbar-brand {
+div.duotail-navbar-brand {
     @include generate-dynamic-styles-with-hash((
         xxxl: (font-size: 1.4rem),
         lg:   (font-size: 1.25rem)
     ));
 
-    img.foxy-navbar-brand-img {
+    img.duotail-navbar-brand-img {
         height: 3rem;
         width: 3rem;
     }
@@ -66,7 +66,7 @@ div.foxy-navbar-brand {
     }
 }
 
-img.foxy-navbar-brand-img {
+img.duotail-navbar-brand-img {
     @include generate-dynamic-styles-with-hash((
         xxxl: (height: 3.4rem, width: 3.4rem),
         lg:   (height: 3rem, width: 3rem)
@@ -86,16 +86,16 @@ img.foxy-navbar-brand-img {
     }
 }
 
-div.foxy-navbar-brand-expand {
+div.duotail-navbar-brand-expand {
     font-size: 1.5rem;
-    img.foxy-navbar-brand-img {
+    img.duotail-navbar-brand-img {
         width: 3.4rem;
         height: 3.4rem;
     }
 
     @include media-breakpoint-down(xl) {
         font-size: 1.45rem;
-        img.foxy-navbar-brand-img {
+        img.duotail-navbar-brand-img {
             width: 3.2rem;
             height: 3.2rem;
         }

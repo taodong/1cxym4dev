@@ -1,14 +1,14 @@
 <template>
-    <div class="foxy-project-info">
+    <div class="duotail-project-info">
         <!-- Logo Wrapper -->
-        <div class="foxy-project-info-logo-wrapper"
-             :class="shrinkImage ? `foxy-project-info-logo-wrapper-shrink` : ``">
+        <div class="duotail-project-info-logo-wrapper"
+             :class="shrinkImage ? `duotail-project-info-logo-wrapper-shrink` : ``">
             <ImageView :src="props.image"
                        alt="Logo"
                        :spinner-enabled="true"/>
         </div>
 
-        <div class="foxy-project-info-content">
+        <div class="duotail-project-info-content">
             <slot/>
         </div>
     </div>
@@ -26,7 +26,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-project-info {
+div.duotail-project-info {
     @include generate-dynamic-styles-with-hash((
         xxxl: (flex-direction: row, width: 100%, padding: 2rem),
         lg:   (flex-direction: column, padding: 1rem, align-items: center),
@@ -36,7 +36,7 @@ div.foxy-project-info {
     display: flex;
 }
 
-div.foxy-project-info-logo-wrapper {
+div.duotail-project-info-logo-wrapper {
     @include generate-dynamic-styles-with-hash((
         xxxl: (height: 320px, min-width: 320px, margin-right: 6rem),
         xl:   (height: 300px, min-width: 300px, margin-right: 4rem),
@@ -48,7 +48,7 @@ div.foxy-project-info-logo-wrapper {
     aspect-ratio: 1/1;
 }
 
-div.foxy-project-info-logo-wrapper-shrink {
+div.duotail-project-info-logo-wrapper-shrink {
     @include generate-dynamic-styles-with-hash((
         xxxl: (height: 280px, width: 280px, min-width: 280px, margin-right: 3rem),
         xl:   (height: 250px, width: 250px, min-width: 250px, margin-right: 3rem),
@@ -56,7 +56,7 @@ div.foxy-project-info-logo-wrapper-shrink {
     ));
 }
 
-div.foxy-project-info-logo-wrapper .image-view {
+div.duotail-project-info-logo-wrapper .image-view {
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -64,7 +64,7 @@ div.foxy-project-info-logo-wrapper .image-view {
     overflow: hidden;
 }
 
-div.foxy-project-info-content {
+div.duotail-project-info-content {
     @include generate-dynamic-styles-with-hash((
         xxxl: (text-align: justify),
         lg:   (text-align: center)

@@ -1,6 +1,6 @@
 <template>
     <!-- Site Section -->
-    <section class="foxy-section"
+    <section class="duotail-section"
              :id="id"
              :class="classList">
 
@@ -27,7 +27,7 @@ const props = defineProps({
 
 const classList = computed(() => {
     return props.variant ?
-        `foxy-section-${props.variant}` :
+        `duotail-section-${props.variant}` :
         ``
 })
 </script>
@@ -35,7 +35,7 @@ const classList = computed(() => {
 <style lang="scss">
 @import "/src/scss/_theming.scss";
 
-section.foxy-section {
+section.duotail-section {
     @include generate-dynamic-styles-with-hash((
         xxxl: (padding: 4rem 0em 5rem),
         xxl:  (padding: 3rem 0rem 3.5rem),
@@ -47,26 +47,26 @@ section.foxy-section {
     background-color: $background-color;
     position: relative;
 
-    .foxy-promo-background {
+    .duotail-promo-background {
         display: block;
         margin-top: -4rem;
     }
 }
 
-section.foxy-section-primary {
+section.duotail-section-primary {
     background-color: lighten($primary, 38%);
 }
 
-section.foxy-section-dark {
+section.duotail-section-dark {
     background-color: lighten($dark, 10%);
     color: $text-normal-contrast;
 
-    h5.foxy-section-header-subtitle {
+    h5.duotail-section-header-subtitle {
         color: $light-5;
     }
 }
 
-section.foxy-section-promo {
+section.duotail-section-promo {
     background-color: transparent;
 }
 </style>

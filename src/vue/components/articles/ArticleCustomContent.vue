@@ -1,5 +1,5 @@
 <template>
-    <article class="foxy-custom-content-article"
+    <article class="duotail-custom-content-article"
              :class="props.class">
         <slot/>
     </article>
@@ -14,7 +14,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-article.foxy-custom-content-article {
+article.duotail-custom-content-article {
     @include generate-dynamic-styles-with-hash((
         xxxl: (padding: 2rem 0),
         lg:   (padding: 1rem 0),

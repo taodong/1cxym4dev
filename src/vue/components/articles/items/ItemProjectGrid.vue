@@ -1,29 +1,29 @@
 <template>
-    <div class="foxy-project-item"
+    <div class="duotail-project-item"
          :class="{
-            'foxy-project-item-hidden': !isShowing,
-            'foxy-project-item-appear': isShowing,
+            'duotail-project-item-hidden': !isShowing,
+            'duotail-project-item-appear': isShowing,
          }"
          @click="_onItemSelected">
-        <div class="foxy-project-item-thumb-wrapper">
+        <div class="duotail-project-item-thumb-wrapper">
             <ImageView :src="props.image"
                        :alt="props.title"
                        :spinner-enabled="false"
                        ref="imageView"
-                       class="foxy-project-item-thumb"/>
+                       class="duotail-project-item-thumb"/>
 
-            <div class="foxy-project-item-thumb-overlay">
-                <div class="foxy-project-item-thumb-overlay-content eq-h6">
+            <div class="duotail-project-item-thumb-overlay">
+                <div class="duotail-project-item-thumb-overlay-content eq-h6">
                     <i class="fas fa-eye fa-2x"/>
                 </div>
             </div>
         </div>
 
-        <div class="foxy-project-item-description-wrapper">
-            <button class="foxy-project-item-title"
+        <div class="duotail-project-item-description-wrapper">
+            <button class="duotail-project-item-title"
                     v-html="props.title"/>
 
-            <p class="foxy-project-item-category text-muted"
+            <p class="duotail-project-item-category text-muted"
                v-html="props.category"/>
         </div>
     </div>
@@ -116,7 +116,7 @@ const _onItemSelected = () => {
 <style lang="scss">
 @import "/src/scss/_theming.scss";
 
-div.foxy-project-item {
+div.duotail-project-item {
     display: inline-flex;
     flex-direction: column;
     position: relative;
@@ -142,7 +142,7 @@ div.foxy-project-item {
     }
 }
 
-div.foxy-project-item-thumb-wrapper {
+div.duotail-project-item-thumb-wrapper {
     position: relative;
     margin: 0 auto;
     cursor: pointer;
@@ -157,7 +157,7 @@ div.foxy-project-item-thumb-wrapper {
     }
 }
 
-div.foxy-project-item-thumb-overlay {
+div.duotail-project-item-thumb-overlay {
     position: absolute;
     top: 0;
     opacity: 0;
@@ -178,7 +178,7 @@ div.foxy-project-item-thumb-overlay {
     }
 }
 
-button.foxy-project-item-title {
+button.duotail-project-item-title {
     border: none;
     padding: 0;
     background-color: transparent;
@@ -193,7 +193,7 @@ button.foxy-project-item-title {
     }
 }
 
-p.foxy-project-item-category {
+p.duotail-project-item-category {
     margin: 0;
     padding: 0;
 
@@ -203,12 +203,12 @@ p.foxy-project-item-category {
     }
 }
 
-div.foxy-project-item:hover {
-    div.foxy-project-item-thumb-overlay {
+div.duotail-project-item:hover {
+    div.duotail-project-item-thumb-overlay {
         opacity: 1;
     }
 
-    button.foxy-project-item-title {
+    button.duotail-project-item-title {
         color: lighten($primary, 10%);
         transition: color ease-in-out 0.3s;
     }

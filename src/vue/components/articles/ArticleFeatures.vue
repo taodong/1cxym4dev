@@ -1,5 +1,5 @@
 <template>
-    <article class="foxy-features-article row">
+    <article class="duotail-features-article row">
         <slot/>
     </article>
 </template>
@@ -10,7 +10,7 @@
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-article.foxy-features-article {
+article.duotail-features-article {
     text-align: center;
     row-gap: 35px;
     @include media-breakpoint-down(lg) {

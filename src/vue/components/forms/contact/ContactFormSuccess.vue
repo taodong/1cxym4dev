@@ -1,10 +1,10 @@
 <template>
-    <div class="foxy-contact-form-success">
-        <div class="foxy-contact-form-success-icon-wrapper display-3">
+    <div class="duotail-contact-form-success">
+        <div class="duotail-contact-form-success-icon-wrapper display-3">
             <i class="fa-solid fa-envelope-circle-check"/>
         </div>
 
-        <div class="foxy-contact-form-success-content-wrapper mt-2">
+        <div class="duotail-contact-form-success-content-wrapper mt-2">
             <h3 v-html="utils.parseCustomText(strings.get('contact_thank_you'), true)"/>
 
             <p class="text-4 mt-4 mb-3"
@@ -32,7 +32,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-contact-form-success {
+div.duotail-contact-form-success {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@ div.foxy-contact-form-success {
     border-radius: 10px;
 }
 
-div.foxy-contact-form-success-content-wrapper {
+div.duotail-contact-form-success-content-wrapper {
     text-align: center;
 
     h3 {

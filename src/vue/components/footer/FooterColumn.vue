@@ -1,7 +1,7 @@
 <template>
-    <div class="foxy-footer-col col-12 col-lg-4">
+    <div class="duotail-footer-col col-12 col-lg-4">
         <!-- Column Title -->
-        <h5 class="foxy-footer-col-title">
+        <h5 class="duotail-footer-col-title">
             <i v-if="props.faIcon"
                :class="props.faIcon"/>
 
@@ -10,15 +10,15 @@
 
         <!-- Description -->
         <div v-if="props.description.length > 0"
-             class="foxy-footer-col-item">
-            <div class="foxy-footer-col-description">
+             class="duotail-footer-col-item">
+            <div class="duotail-footer-col-description">
                 <p v-for="descriptionItem in props.description" class="text-2 m-0" v-html="descriptionItem"/>
             </div>
         </div>
 
         <!-- Circle Links -->
         <div v-if="props.links.length > 0 && props.displayLinksAsButtons"
-             class="foxy-footer-col-item mt-3">
+             class="duotail-footer-col-item mt-3">
             <SocialLinks :items="props.links"
                          variant="dark"
                          size="3"/>
@@ -26,7 +26,7 @@
 
         <!-- Inline Links -->
         <div v-if="props.links.length > 0 && !props.displayLinksAsButtons"
-             class="foxy-footer-col-item mt-2 mt-lg-1">
+             class="duotail-footer-col-item mt-2 mt-lg-1">
             <InlineLinkList :items="props.links"/>
         </div>
     </div>
@@ -52,7 +52,7 @@ p, span {
     color: $light-5;
 }
 
-div.foxy-footer-col {
+div.duotail-footer-col {
     @include media-breakpoint-down(lg) {
         padding-top: 1.5rem;
         padding-bottom: 2rem;
@@ -71,14 +71,14 @@ div.foxy-footer-col {
     }
 }
 
-h5.foxy-footer-col-title {
+h5.duotail-footer-col-title {
     i, span {
         color: $light-1;
         text-transform: uppercase;
     }
 }
 
-div.foxy-footer-col-item {
+div.duotail-footer-col-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +92,7 @@ div.foxy-footer-col-item {
     max-width: 380px;
 }
 
-div.foxy-footer-col-description {
+div.duotail-footer-col-description {
     display: flex;
     flex-direction: column;
     align-items: center;

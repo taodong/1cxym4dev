@@ -1,5 +1,5 @@
 <template>
-    <article class="foxy-info-block-article">
+    <article class="duotail-info-block-article">
         <div class="image-wrapper">
             <ImageView :src="image"
                        alt="Logo"
@@ -31,7 +31,7 @@ const parsedParagraphs = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-article.foxy-info-block-article {
+article.duotail-info-block-article {
     display: flex;
     flex-direction: row;
     width: 100%;

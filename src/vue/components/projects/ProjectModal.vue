@@ -1,8 +1,8 @@
 <template>
-    <div class="modal modal-xl fade foxy-project-modal"
-         id="foxy-project-modal"
+    <div class="modal modal-xl fade duotail-project-modal"
+         id="duotail-project-modal"
          tabindex="-1"
-         aria-labelledby="foxy-project-modal-label">
+         aria-labelledby="duotail-project-modal-label">
         <div class="modal-dialog modal-dialog-centered">
             <!-- Modal Content -->
             <div class="modal-content">
@@ -47,7 +47,7 @@ const emit = defineEmits(['close'])
 const bsModal = ref(null)
 
 onMounted(() => {
-    const elModal = document.getElementById("foxy-project-modal")
+    const elModal = document.getElementById("duotail-project-modal")
     bsModal.value = new Modal(elModal, {})
     elModal.addEventListener('hide.bs.modal', _onWillHide)
     elModal.addEventListener('hidden.bs.modal', _onHidden)

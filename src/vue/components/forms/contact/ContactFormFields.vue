@@ -1,14 +1,14 @@
 <template>
-    <div class="foxy-contact-form-row row g-0">
+    <div class="duotail-contact-form-row row g-0">
         <!-- Error Alert Alert -->
         <div v-if="errorMessage"
-             class="foxy-contact-form-alert-column col-12">
+             class="duotail-contact-form-alert-column col-12">
             <Alert variant="danger"
                    :message="errorMessage"/>
         </div>
 
         <!-- Left Column -->
-        <div class="foxy-contact-form-left-column col-lg-6">
+        <div class="duotail-contact-form-left-column col-lg-6">
             <!-- Input Groups -->
             <div v-for="item in inputItems"
                  class="form-group input-group"
@@ -33,7 +33,7 @@
 
 
         <!-- Right Column -->
-        <div class="foxy-contact-form-right-column col-lg-6">
+        <div class="duotail-contact-form-right-column col-lg-6">
             <!-- Textarea -->
             <div class="form-group form-group-textarea mb-md-0">
                 <textarea class="form-control"
@@ -48,7 +48,7 @@
         </div>
 
         <!-- Buttons -->
-        <div class="foxy-contact-form-bottom-column col-lg-12 text-center">
+        <div class="duotail-contact-form-bottom-column col-lg-12 text-center">
             <XLButton :label="strings.get('send')"
                       class="btn-submit btn-primary-light"
                       type="submit"
@@ -96,20 +96,20 @@ const _onInputChanged = (e) => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-contact-form-row {
+div.duotail-contact-form-row {
     --column-spacing: 12px;
     @include media-breakpoint-down(lg) {
         --column-spacing: 8px;
     }
 
-    div.foxy-contact-form-alert-column {
+    div.duotail-contact-form-alert-column {
         padding-bottom: calc(var(--column-spacing) * 1.5);
         @include media-breakpoint-down(lg) {
             padding-bottom: var(--column-spacing);
         }
     }
 
-    div.foxy-contact-form-left-column {
+    div.duotail-contact-form-left-column {
         padding-right: calc(var(--column-spacing)/2);
         padding-bottom: calc(var(--column-spacing) * 3);
         @include media-breakpoint-down(lg) {
@@ -118,7 +118,7 @@ div.foxy-contact-form-row {
         }
     }
 
-    div.foxy-contact-form-right-column {
+    div.duotail-contact-form-right-column {
         padding-left: var(--column-spacing);
         padding-bottom: calc(var(--column-spacing) * 3);
         @include media-breakpoint-down(lg) {

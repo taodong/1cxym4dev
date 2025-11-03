@@ -1,6 +1,6 @@
 <template>
-    <article class="foxy-timeline-article">
-        <ul class="foxy-timeline">
+    <article class="duotail-timeline-article">
+        <ul class="duotail-timeline">
             <slot/>
 
             <ItemTimelineEntry :trailing="true"/>
@@ -55,13 +55,13 @@ import ItemTimelineEntry from "/src/vue/components/articles/items/ItemTimelineEn
     }
 }
 
-ul.foxy-timeline {
+ul.duotail-timeline {
     position: relative;
     padding: var(--padding);
     list-style: none;
 }
 
-ul.foxy-timeline:before {
+ul.duotail-timeline:before {
     position: absolute;
     top: 0;
     bottom: 0;

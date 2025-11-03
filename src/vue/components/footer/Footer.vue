@@ -1,5 +1,5 @@
 <template>
-    <footer class="foxy-footer">
+    <footer class="duotail-footer">
         <slot/>
     </footer>
 </template>
@@ -10,7 +10,7 @@
 <style lang="scss">
 @import "/src/scss/_theming.scss";
 
-.foxy-footer {
+.duotail-footer {
     background-color: $footer-bg-color;
 }
 </style>

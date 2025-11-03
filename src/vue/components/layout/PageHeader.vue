@@ -1,16 +1,16 @@
 <template>
     <header :id="id"
-            class="foxy-header">
+            class="duotail-header">
         <BackgroundPromo :faded="false"/>
 
         <!-- Content -->
         <div class="container-xxl">
-            <article class="foxy-hero-header">
+            <article class="duotail-hero-header">
                 <!-- Logo -->
                 <ImageView :src="logoUrl"
                            :spinner-enabled="true"
                            :alt="title"
-                           class="foxy-hero-header-logo"/>
+                           class="duotail-hero-header-logo"/>
 
                 <!-- Texts -->
                 <h1 class="heading"
@@ -63,7 +63,7 @@ const parsedSubtitle = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-header.foxy-header {
+header.duotail-header {
     --height: clamp(650px, 100vh, 1050px);
     --content-margin-top: 80px;
     --max-logo-proportion:45vw;
@@ -89,7 +89,7 @@ header.foxy-header {
         padding-bottom: 2rem;
     }
 
-    article.foxy-hero-header {
+    article.duotail-hero-header {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -97,7 +97,7 @@ header.foxy-header {
         padding-top:var(--content-margin-top);
     }
 
-    div.foxy-hero-header-logo {
+    div.duotail-hero-header-logo {
         height: var(--logo-proportion);
         width: var(--logo-proportion);
     }

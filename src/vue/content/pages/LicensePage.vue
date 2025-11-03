@@ -1,5 +1,5 @@
 <template>
-    <PageWrapper id="foxy-license-page"
+    <PageWrapper id="duotail-license-page"
                  :no-padding="false"
                  :sections="sections"/>
 </template>

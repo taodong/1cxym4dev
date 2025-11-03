@@ -1,6 +1,6 @@
 <template>
-    <div class="foxy-page-wrapper"
-         :class="noPadding ? `foxy-page-wrapper-no-padding` : ``"
+    <div class="duotail-page-wrapper"
+         :class="noPadding ? `duotail-page-wrapper-no-padding` : ``"
          :id="props.id">
         <component v-for="sectionInfo in sections"
                    :is="sectionInfo.component"
@@ -32,7 +32,7 @@ onBeforeMount(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-page-wrapper {
+div.duotail-page-wrapper {
     @include generate-dynamic-styles-with-hash((
         xxxl: (padding-top:2rem),
         xxl: (padding-top:2.75rem),
@@ -40,7 +40,7 @@ div.foxy-page-wrapper {
     ));
 }
 
-div.foxy-page-wrapper-no-padding {
+div.duotail-page-wrapper-no-padding {
     padding-top: 0!important;
 }
 </style>

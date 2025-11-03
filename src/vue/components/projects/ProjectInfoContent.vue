@@ -1,5 +1,5 @@
 <template>
-    <div class="foxy-project-info-content">
+    <div class="duotail-project-info-content">
         <!-- Title -->
         <h1 class="mb-3"
             v-html="parsedTitle"/>

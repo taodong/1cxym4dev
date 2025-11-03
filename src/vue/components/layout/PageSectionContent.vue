@@ -1,5 +1,5 @@
 <template>
-    <div class="foxy-section-content">
+    <div class="duotail-section-content">
         <slot/>
     </div>
 </template>

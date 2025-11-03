@@ -1,5 +1,5 @@
 <template>
-    <div class="foxy-project-info-featured-content">
+    <div class="duotail-project-info-featured-content">
         <h4 class="title mb-2 text-light-5">
             <i class="fa-solid fa-fire me-2"/>
             {{ strings.get('latest_release') }}

@@ -1,7 +1,7 @@
 <template>
-    <div class="foxy-section-footer">
+    <div class="duotail-section-footer">
         <div class="row">
-            <div class="foxy-section-footer-content col-12 col-lg-8">
+            <div class="duotail-section-footer-content col-12 col-lg-8">
                 <Divider v-if="includeDivider"
                          class="mb-4"/>
 
@@ -56,7 +56,7 @@ const parsedDescription = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.foxy-section-footer {
+div.duotail-section-footer {
     @include generate-dynamic-styles-with-hash((
         xxxl: (margin-top: 2rem),
         xxl:  (margin-top: 1.5rem),
@@ -68,7 +68,7 @@ div.foxy-section-footer {
     text-align: center;
 }
 
-div.foxy-section-footer-content {
+div.duotail-section-footer-content {
     text-align: center;
     margin: 0 auto;
 }

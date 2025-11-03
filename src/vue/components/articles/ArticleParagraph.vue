@@ -1,5 +1,5 @@
 <template>
-    <article class="foxy-paragraph-article">
+    <article class="duotail-paragraph-article">
         <!-- Heading -->
         <div v-if="props.title"
              class="article-heading">
@@ -41,7 +41,7 @@ const parsedTitle = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-article.foxy-paragraph-article {
+article.duotail-paragraph-article {
     &:not(:last-child) {
         margin-bottom: 2.0rem;
     }

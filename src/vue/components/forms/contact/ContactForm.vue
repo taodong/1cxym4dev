@@ -1,5 +1,5 @@
 <template>
-    <form id="foxy-contact-form" @submit="_onFormSubmit">
+    <form id="duotail-contact-form" @submit="_onFormSubmit">
         <ContactFormFields v-if="shouldDisplayFormFields"
                            :error-message="errorMessage"
                            @input="_onInput"/>
@@ -87,7 +87,7 @@ const _submit = async () => {
 }
 
 const _resetScroll = () => {
-    const element = document.getElementById('contact') || document.getElementById('foxy-contact-form')
+    const element = document.getElementById('contact') || document.getElementById('duotail-contact-form')
     layout.scrollIntoView(element)
 }
 </script>
@@ -95,7 +95,7 @@ const _resetScroll = () => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-#foxy-contact-form {
+#duotail-contact-form {
     width: 100%;
     @include media-breakpoint-down(lg) {
         max-width: 680px;
