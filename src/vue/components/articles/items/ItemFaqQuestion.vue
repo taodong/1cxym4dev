@@ -1,9 +1,8 @@
 <template>
     <div class="duotail-item-faq-question">
         <!-- Question Icon -->
-        <div class="flex-shrink-0">
-            
-            <i class="fa fa-question-circle text-primary question-icon eq-h4"/>
+        <div v-if="props.icon !== 'none'" class="flex-shrink-0">
+            <i :class="['fa', props.icon, 'text-primary', 'question-icon', 'eq-h4']"/>
         </div>
 
         <!-- Question Content -->
@@ -33,6 +32,10 @@ const props = defineProps({
     anchor: {
         type: String,
         default: null
+    },
+    icon: {
+        type: String,
+        default: "fa-question-circle"
     }
 })
 

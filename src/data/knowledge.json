@@ -1,0 +1,40 @@
+{
+    "email_summary_table": {
+        "title": "Email Summary Table",
+        "content": [
+            {
+                "icon": "none",
+                "anchor": "email-summary-table",
+                "question": "Email Summary Table",
+                "answer": "*Email summary table* is a system generated table inserted at the beginning of each email to provide a quick overview of the email original content. It will be removed when the email is replied."
+            },
+            {
+                "icon": "none",
+                "question": "Sender Name, Sender Email and Subject",
+                "answer": "*Sender name*, *sender email* and *subject* listed in the email summary table are the are the sender name, sender email and subject of the original email."
+            },
+            {
+                "icon": "none",
+                "question": "Email Entrance",
+                "answer": "*Email entrance* is the original recipient of the email. When the email is replied, this address will be used as the sender address."
+            },
+            {
+                "icon": "none",
+                "anchor": "trace-alert",
+                "question": "Trace Alert",
+                "answer": "*Trace alert* is a notification that there is a traced link detected in the original email."
+            },
+            {
+                "icon": "none",
+                "anchor": "unsecured-link-alert",
+                "question": "Unsecured Link Alert",
+                "answer": "*Unsecured link alert* is a notification that there are unsecured links detected in the original email. In such case, all the unsecured links are listed in the following *Unsecured URLs* column."
+            },
+            {
+                "icon": "none",
+                "question": "Quick Email Actions",
+                "answer": "*Quick email actions* are the actions that can be performed on the email directly from the email summary table."
+            }
+        ]
+    }
+}

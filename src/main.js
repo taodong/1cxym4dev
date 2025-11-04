@@ -5,7 +5,7 @@ import App from "/src/vue/stack/App.vue"
 import HomePage from "/src/vue/content/pages/HomePage.vue"
 import LicensePage from "/src/vue/content/pages/LicensePage.vue"
 import PolicyPage from "/src/vue/content/pages/PolicyPage.vue"
-import EmailInfoPage from "/src/vue/content/pages/EmailInfoPage.vue"
+import KnowledgePage from "./vue/content/pages/KnowledgePage.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -54,11 +54,11 @@ const router = createRouter({
         },
 
         {
-            path: "/email-info",
-            name: "email-info",
-            component: EmailInfoPage,
+            path: "/knowledge",
+            name: "knowledge",
+            component: KnowledgePage,
             props: {
-                label: "Email Information",
+                label: "Knowledge Base",
                 faIcon: "fa-solid fa-book-open",
                 inPageNavbar: false,
                 shouldAlwaysPreload: false,

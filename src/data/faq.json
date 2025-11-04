@@ -1,0 +1,16 @@
+{
+    "faqs": [
+        {
+            "question": "What is Email Address Service?",
+            "answer": "Email Address Service is a solution that provides users with email addresses to protect their personal inboxes."
+        },
+        {
+            "question": "What is our service different from other email forwarding services?",
+            "answer": "<p>There are three main differences:</p><ul><li><strong>Whitelisted Only:</strong> All the senders have to be whitelisted before their emails are forwarded.</li><li><strong>Silent Reception:</strong> All incoming emails are either saved, dropped or forwarded without notifying the outside sender.</li><li><strong>Prefix Based:</strong> All the email addresses with the same prefix are granted to a simple customer.</li></ul>"
+        },
+        {
+            "question": "Is my personal email address exposed when using Email Address Service?",
+            "answer": "No, your personal email address remains private as all communications are routed through the email addresses provided by the service."
+        }
+    ]
+}

@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import {inject, provide, ref, watch} from "vue"
+import {inject, ref, watch} from "vue"
 import ActivitySpinner from "/src/vue/components/loaders/ActivitySpinner.vue"
 import Loader from "/src/vue/components/loaders/Loader.vue"
 

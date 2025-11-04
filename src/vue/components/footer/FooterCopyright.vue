@@ -11,16 +11,14 @@ const strings = useStrings()
 
 const props = defineProps({
     holder: String,
-    url: String,
-    license: String,
+    url: String
 })
 
 const formattedCopyright = computed(() => {
     return strings.getCopyrightMessage(
         new Date().getFullYear().toString(),
         props.holder,
-        props.url,
-        props.license
+        props.url
     )
 })
 </script>

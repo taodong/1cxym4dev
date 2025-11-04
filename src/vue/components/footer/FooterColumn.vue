@@ -1,5 +1,5 @@
 <template>
-    <div class="duotail-footer-col col-12 col-lg-4">
+    <div class="duotail-footer-col col-12 col-lg-6">
         <!-- Column Title -->
         <h5 class="duotail-footer-col-title">
             <i v-if="props.faIcon"
@@ -95,7 +95,11 @@ div.duotail-footer-col-item {
 div.duotail-footer-col-description {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    p: {
+        text-transform: none !important;
+    }
 }
 </style>

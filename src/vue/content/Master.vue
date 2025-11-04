@@ -10,48 +10,30 @@
     <Footer>
         <FooterBlock :darken="false"
                      :row="true">
-            <FooterColumn title="About"
-                          faIcon="fa-solid fa-pen-to-square me-1 d-none d-md-inline"
+            <FooterColumn title="Credits"
+                          faIcon="fa-solid fa-award me-1 d-none d-md-inline"
                           :description="[
-                              `This template is maintained by Ryan Balieiro and is based on the <a href='https://getbootstrap.com/'>Bootstrap</a> framework and the <a href='https://vuejs.org/'>Vue</a> framework.`
+                              `The look and feel of this website is developed above Ryan Balieiro's <a href='https://github.com/ryanbalieiro/vue-agency-landing-page-template/' target='_blank'>Foxy - Vue Agency Landing Page</a> framework.`
                           ]"
-                          :links="[
-                              {label: `Privacy Policy`, href: `/privacy-policy`, faIcon: null},
-                              {label: `License`, href: `/license`, faIcon: null},
-                              {label: `Github Repo`, href: `https://github.com/ryanbalieiro/vue-agency-landing-page-template`, faIcon: null},
-                          ]"
+                          :links="[]"
                           :displayLinksAsButtons="false"/>
-
-            <FooterColumn title="Connect With Us"
-                          faIcon=""
-                          :description="[
-                          ]"
-                          :links="[
-                              {label: `Twitter`, href: `https://twitter.com`, faIcon:`fa-brands fa-twitter`},
-                              {label: `TikTok`, href: `https://tiktok.com`, faIcon:`fa-brands fa-tiktok`},
-                              {label: `Linkedin`, href: `https://linkedin.com`, faIcon:`fa-brands fa-linkedin`},
-                              {label: `Spotify`, href: `https://spotify.com`, faIcon:`fa-brands fa-spotify`},
-                          ]"
-                          :displayLinksAsButtons="true"/>
 
             <FooterColumn title="Contact Info"
                           faIcon="fa fa-fax me-2"
                           :description="[
-                              `999 Vue Developer's Avenue, 4A Suite 32`,
-                              `Cupertino – CA 01235`
+                              `For any support or feedback, reach out to us at:`,
+                              `<i class='fa-regular fa-envelope'></i> Support:&nbsp;<a href='mailto:support@duotail.com'>support@duotail.com</a>`,
+                              `<i class='fa-regular fa-envelope'></i> Feedback:&nbsp;<a href='mailto:feedback@duotail.com'>feedback@duotail.com</a>`
                           ]"
-                          :links="[
-                              {label: `(555) 555-1234`, href: `tel:123456789`, faIcon: 'fa-regular fa-bell'},
-                              {label: `contact@foxyagency.com`, href: `mailto:foxy@agency.com`, faIcon: 'fa-regular fa-envelope'},
-                          ]"
+                          :links="[]"
                           :displayLinksAsButtons="false"/>
         </FooterBlock>
 
         <FooterBlock :darken="true"
                      :row="false">
-            <FooterCopyright holder="Ryan Balieiro"
-                             url="https://github.com/ryanbalieiro"
-                             license="Distributed Under the MIT License"/>
+            <FooterCopyright holder="www.duotail.com"
+                             url="https://www.duotail.com"
+                             />
         </FooterBlock>
     </Footer>
 </template>
