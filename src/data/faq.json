@@ -2,15 +2,47 @@
     "faqs": [
         {
             "question": "What is Email Address Service?",
-            "answer": "Email Address Service is a solution that provides users with email addresses to protect their personal inboxes."
+            "answer": "Email Address Service is a solution that provides users with email addresses to protect their personal inboxes. <strong>*Our purpose is to provide you an email address that you can post publicly without worrying about spam or privacy issues.*</strong>"
         },
         {
             "question": "What is our service different from other email forwarding services?",
-            "answer": "<p>There are three main differences:</p><ul><li><strong>Whitelisted Only:</strong> All the senders have to be whitelisted before their emails are forwarded.</li><li><strong>Silent Reception:</strong> All incoming emails are either saved, dropped or forwarded without notifying the outside sender.</li><li><strong>Prefix Based:</strong> All the email addresses with the same prefix are granted to a simple customer.</li></ul>"
+            "answer": "<p>There are three main differences:</p><ul><li><strong>Whitelisted Only:</strong> All the senders have to be whitelisted before their emails are forwarded.</li><li><strong>Silent Reception:</strong> All incoming emails are either saved, dropped or forwarded without notifying the outside senders.</li><li><strong>Prefix Based:</strong> All the email addresses with the same prefix are granted to a simple customer.</li></ul>"
+        },
+        {
+            "question": "What does *Whitelisted Only* mean?",
+            "answer": "It means only the senders that you have approved can send emails to your email addresses. For your main email address, e.g. *example@duotail.com*, only emails from your contacts will be forwarded. For tailed email addresses, e.g. *example_amazon@duotail.com*, you can define more lenient rules, such as allowing all emails from a specific domain (e.g., *@amazon.com*)."
+        },
+        {
+            "question": "What does *Silent Reception* mean?",
+            "answer": "It means incoming emails are either saved, dropped or forwarded. We don't bounce email or report junk/spam status to the senders. This way, senders will not be able to guess your email addresses. We believe you should be in full control of how your email addresses are known."
+        },
+        {
+            "question": "What does *Prefix Based* mean?",
+            "answer": "It means each customer is granted all the email addresses with the same prefix. For example, if your prefix is *example*, then your main email address is *example@duotail.com*. Any address beginning with *example_* (e.g., *example_amazon@duotail.com*, *example_cat@duotail.com*) will only belong to you."
         },
         {
             "question": "Is my personal email address exposed when using Email Address Service?",
             "answer": "No, your personal email address remains private as all communications are routed through the email addresses provided by the service."
+        },
+        {
+            "question": "Is the Email addresses disposable?",
+            "answer": "Technically, you can stop use them anytime you want. However, the goal is to provide you an email address that you can use life-long."
+        },
+        {
+            "question": "Do I need to configure anything in my personal email account?",
+            "answer": "No, you don't need to configure anything in your personal email account. However, you may want to add our email domain *duotail.com* to your email provider's safe sender list."
+        },
+        {
+            "question": "Can I have an email address that all incoming emails are forwarded to my personal inbox?",
+            "answer": "No. Our service is designed to protect your privacy. If you want a regular email forwarding, we suggest you either create a new email account through popular email providers such as *gmail* or try existing email forwarding services."
+        },
+        {
+            "question": "Do you store my emails?",
+            "answer": "In current version, we bare the cost of storing some of your emails for up to 90 days in case you need to access any emails that are not forwarded to your personal inbox. In future versions, we may offer additional storage options."
+        },
+        {
+            "question": "Why does my email address start with a prefix *a_*?",
+            "answer": "Prefix *a_* is called an alias prefix. We believe everyone should have an email address that they can use without tied to their real identity. However, the recipient of these emails should be able to tell if an email is from an anonymous sender. Therefore, we prepend all alias email addresses with prefix *a_*. So, a person received an email from *a_harry.potter@duotail.com*, he can tell the sender is *<strong>A</strong> Harry Potter* not *<strong>The</strong> Harry Potter*."
         }
     ]
 }
