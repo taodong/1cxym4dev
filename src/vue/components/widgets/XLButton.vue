@@ -1,19 +1,39 @@
 <template>
-    <button class="btn btn-primary btn-xl"
+    <button class="btn btn-xl"
             :type="props.type || 'button'"
-            :class="props.class">
+            :class="[defaultVariantClass, props.class]">
         <i class="me-2" :class="props.icon"/>
         <span v-html="props.label"/>
     </button>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
     class: String,
     label: String,
     type: String,
     icon: String,
 })
+
+// Bootstrap variant classes to check
+const variantClasses = [
+  'btn-primary', 'btn-secondary', 'btn-success', 'btn-danger', 'btn-warning',
+  'btn-info', 'btn-light', 'btn-dark', 'btn-link'
+]
+
+// Normalize props.class to a list of class tokens
+const classTokens = computed(() => {
+  const cls = props.class
+  if (!cls) return []
+  if (Array.isArray(cls)) return cls.flatMap(s => String(s).split(/\s+/)).filter(Boolean)
+  if (typeof cls === 'object') return Object.keys(cls).filter(k => cls[k])
+  return String(cls).split(/\s+/).filter(Boolean)
+})
+
+const hasVariant = computed(() => classTokens.value.some(c => variantClasses.includes(c)))
+const defaultVariantClass = computed(() => (hasVariant.value ? null : 'btn-primary'))
 </script>
 
 <style lang="scss" scoped>

@@ -2,10 +2,11 @@
     "prices": [
         {
             "title": "Free",
+            "description": "Ideal for securing individual's incoming emails<br><br>",
             "image": "images/prices/free.svg",
             "price": "<span class='fs-1'>Free</span>",
             "features": [
-                "<b>Alias Cluster:</b>*1*",
+                "<b>Alias Emails:</b>*10*",
                 "<b>Received Emails:</b>*Unlimited*",
                 "<b>Replied Emails:</b>*Unlimited*"
             ],
@@ -18,12 +19,13 @@
         },
         {
             "title": "Basic",
+            "description": "Perfect for individuals who seek full control over email privacy",
             "image": "images/prices/basic.svg",
             "price": "<span class='fs-1'>$10<span><span class='fs-3'>/mon</spa>",
             "features": [
-                "<b>Alias Cluster:</b>*1*",
-                "<b>Alias Cluster:</b>*3*",
-                "<b>Sent Emails:</b>*150*",
+                "<b>Identity Emails:</b>*1*",
+                "<b>Alias Emails:</b>*10*",
+                "<b>Sent Emails:</b>*150/mon*",
                 "<b>Received Emails:</b>*Unlimited*",
                 "<b>Replied Emails:</b>*Unlimited*"
             ],
@@ -36,14 +38,14 @@
         },
         {
             "title": "Business",
+            "description": "Designed for small businesses and teams to manage email communications",
             "image": "images/prices/org.svg",
-            "price": "<span class='fs-1'>Starting at $100</span><span class='fs-3'>/mon</span>",
+            "price": "<span class='fs-1'>Starts at $50</span><span class='fs-3'>/mon</span>",
             "features": [
-                "<b>Alias Cluster:</b>*1*",
-                "<b>Alias Cluster:</b>*12*",
-                "<b>Sent Emails:</b>*600*",
-                "<b>Received Emails:</b>*Unlimited*",
-                "<b>Replied Emails:</b>*Unlimited*"
+                "<b>Customized Domain:</b>*1*",
+                "<b>Traditional Emails:</b>*Allowed*",
+                "<b>Duotail Emails:</b>*Unlimited*",
+                "<b>Group Emails:</b>*Enabled*"
             ],
             "button": {
                 "type": "notification",

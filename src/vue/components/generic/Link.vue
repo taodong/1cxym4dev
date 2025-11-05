@@ -16,19 +16,24 @@
        target="_blank">
         <slot/>
     </a>
+
+    <button v-else
+            class="btn-link-wrapper"
+            @click="_onEmitUrlClicked">
+        <slot/>
+    </button>
 </template>
 
 <script setup>
 import {computed} from "vue"
 import {useLayout} from "/src/composables/layout.js"
-import {useRoute} from "vue-router"
 
 const props = defineProps({
     url: String
 })
+const emit = defineEmits(['click'])
 
 const layout = useLayout()
-const route = useRoute()
 
 const isRouterLink = computed(() => {
     return String(props.url).charAt(0) === "/"
@@ -57,6 +62,10 @@ const _onHashLinkClicked = () => {
     if(sectionDiv) {
         layout.scrollIntoView(sectionDiv)
     }
+}
+
+const _onEmitUrlClicked = () => {
+    emit('click', props.url)
 }
 </script>
 

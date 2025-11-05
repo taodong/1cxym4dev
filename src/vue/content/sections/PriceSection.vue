@@ -4,7 +4,7 @@
                  :id="props.id">
         <!-- Title -->
         <PageSectionHeader title="*Price* Plans"
-                           subtitle="Plans for every needs"/>
+                           subtitle="Tailored for your needs"/>
 
         <!-- Content -->
         <PageSectionContent>
@@ -28,6 +28,7 @@
                                   :key="index">
                         <PriceItem
                             :title="price.title"
+                            :description="price.description"
                             :image="price.image"
                             :features="price.features"
                             :price="price.price"

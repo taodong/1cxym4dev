@@ -19,12 +19,17 @@
                     v-html="parsedSubtitle"/>
 
                 <!-- Button -->
-                <Link v-if="showButton"
-                      :url="props.buttonUrl">
-                    <XLButton :label="buttonLabel"
-                              :icon="buttonIcon"
-                              :class="`mt-4`"/>
-                </Link>
+                <div v-if="showButton && Array.isArray(buttons) && buttons.length"
+                     class="duotail-hero-header-buttons">
+                    <Link v-for="(button, idx) in buttons"
+                          :key="`${button.label}-${idx}`"
+                          :url="button.url"
+                          @click="emit('click', $event)">
+                        <XLButton :label="button.label"
+                                  :icon="button.icon"
+                                  :class="['mt-4', idx > 0 && 'btn-light']"/>
+                    </Link>
+                </div>
             </article>
         </div>
     </header>
@@ -46,10 +51,10 @@ const props = defineProps({
     subtitle: String,
     logoUrl: String,
     showButton: Boolean,
-    buttonLabel: String,
-    buttonIcon: String,
-    buttonUrl: String
+    buttons: Array
 })
+
+const emit = defineEmits(['click'])
 
 const parsedTitle = computed(() => {
     return utils.parseCustomText(props.title)
@@ -118,6 +123,13 @@ header.duotail-header {
         padding: calc(var(--logo-proportion)/20) 0;
         line-height: 24px;
         text-align: center;
+    }
+
+    div.duotail-hero-header-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
     }
 }
 </style>

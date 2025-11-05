@@ -11,6 +11,8 @@
         </div>
 
         <div class="card-body text-4">
+            <p v-if="props.description" class="duotail-testimonial-description ms-3 mt-2 card-subtitle"
+               v-html="utils.parseCustomText(props.description)"/>
             <ul class="list-group">
                 <li v-for="feature in props.features"
                     :key="feature"
@@ -50,6 +52,7 @@ const utils = useUtils()
 const props = defineProps({
     title: String,
     image: String,
+    description: String,
     features: {
         type: Array,
         default: () => []
@@ -124,5 +127,9 @@ div.card-footer {
 
 div.card-footer .price-text {
     padding-left: 1rem;
+}
+
+p.duotail-testimonial-description {
+    margin-bottom: 1rem;
 }
 </style>
