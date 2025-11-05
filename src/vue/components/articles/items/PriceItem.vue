@@ -22,12 +22,18 @@
         <div class="card-footer">
             <p class="price-text" v-html="parsedPrice"/>
             
-        
-             <!-- Button -->
-             <Link :url="props.buttonUrl">
+            <!-- Button -->
+            <template v-if="props.buttonType !== 'notification'">
+                <Link :url="props.buttonUrl">
                     <XLButton :label="props.buttonText"
                               :class="`mt-6`"/>
-             </Link>
+                </Link>
+            </template>
+            <template v-else>
+                <XLButton :label="props.buttonText"
+                          :class="`mt-6`"
+                          @click="triggerNotification"/>
+            </template>
         </div>
     </div>
 </template>
@@ -49,9 +55,16 @@ const props = defineProps({
         default: () => []
     },
     price: String,
-    buttonUrl: String,
-    buttonText: String   
+    buttonUrl: { type: String, default: "" },
+    buttonText: String,
+    buttonType: {
+        type: String,
+        default: "url"
+    },
+    buttonNotice: { type: String, default: "" }
 })
+
+const emit = defineEmits(['notify'])
 
 const parsedTitle = computed(() => {
     return utils.parseCustomText(props.title)
@@ -59,7 +72,12 @@ const parsedTitle = computed(() => {
 
 const parsedPrice = computed(() => {
     return utils.parseCustomText(props.price)
-}) 
+})
+
+const triggerNotification = () => {
+    // Emit up to parent section to show the Notification modal
+    emit('notify', { message: props.buttonNotice, level: 'info' })
+}
 </script>
 
 <style lang="scss" scoped>

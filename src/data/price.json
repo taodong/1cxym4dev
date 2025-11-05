@@ -1,3 +1,56 @@
 {
-    
+    "prices": [
+        {
+            "title": "Free",
+            "image": "images/prices/free.svg",
+            "price": "<span class='fs-1'>Free</span>",
+            "features": [
+                "<b>Alias Cluster:</b>*1*",
+                "<b>Received Emails:</b>*Unlimited*",
+                "<b>Replied Emails:</b>*Unlimited*"
+            ],
+            "button": {
+                "type": "url",
+                "text": "Get Started",
+                "link": "https://duotail.com",
+                "notice": ""
+            }
+        },
+        {
+            "title": "Basic",
+            "image": "images/prices/basic.svg",
+            "price": "<span class='fs-1'>$10<span><span class='fs-3'>/mon</spa>",
+            "features": [
+                "<b>Alias Cluster:</b>*1*",
+                "<b>Alias Cluster:</b>*3*",
+                "<b>Sent Emails:</b>*150*",
+                "<b>Received Emails:</b>*Unlimited*",
+                "<b>Replied Emails:</b>*Unlimited*"
+            ],
+            "button": {
+                "type": "notification",
+                "text": "Get Started",
+                "link": "",
+                "notice": "Please contact support@duotail.com to enroll this plan."
+            }
+        },
+        {
+            "title": "Business",
+            "image": "images/prices/org.svg",
+            "price": "<span class='fs-1'>Starting at $100</span><span class='fs-3'>/mon</span>",
+            "features": [
+                "<b>Alias Cluster:</b>*1*",
+                "<b>Alias Cluster:</b>*12*",
+                "<b>Sent Emails:</b>*600*",
+                "<b>Received Emails:</b>*Unlimited*",
+                "<b>Replied Emails:</b>*Unlimited*"
+            ],
+            "button": {
+                "type": "notification",
+                "text": "Get Quote",
+                "link": "",
+                "notice": "Please contact support@duotail.com to get more information."
+            }
+        }
+    ]
 }
