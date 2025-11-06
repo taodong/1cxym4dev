@@ -39,11 +39,11 @@ const router = createRouter({
         },
 
         {
-            path: "/license",
+            path: "/terms-of-service",
             name: "license",
             component: LicensePage,
             props: {
-                label: "License",
+                label: "Terms of Service",
                 faIcon: "fa-solid fa-copy",
                 inPageNavbar: false,
                 shouldAlwaysPreload: false,
@@ -60,21 +60,6 @@ const router = createRouter({
             props: {
                 label: "Knowledge Base",
                 faIcon: "fa-solid fa-book-open",
-                inPageNavbar: false,
-                shouldAlwaysPreload: false,
-                breadcrumbs: [
-                    "/"
-                ]
-            }
-        },
-
-        {
-            path: "/license",
-            name: "license",
-            component: LicensePage,
-            props: {
-                label: "License",
-                faIcon: "fa-solid fa-copy",
                 inPageNavbar: false,
                 shouldAlwaysPreload: false,
                 breadcrumbs: [

@@ -1,0 +1,53 @@
+{
+    "terms": [
+        {
+            "title": "Acceptance of Terms",
+            "icon": "fa-solid fa-circle-check",
+            "description": [
+                "By accessing or using this web service (\"Service\"), you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the Service."
+            ]
+        },
+        {
+            "title": "No Warranty",
+            "icon": "fa-solid fa-exclamation-triangle",
+            "description": [
+                "This Service is provided \"as is\" and \"as available\" without any warranties of any kind, express or implied. We do not guarantee that the Service will be uninterrupted, error-free, secure, or free from viruses or other harmful components."
+            ]
+        },
+        {
+            "title": "Limitation of Liability",
+            "icon": "fa-solid fa-shield-alt",
+            "description": [
+                "To the maximum extent permitted by law, we shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of or related to your use of the Service. This includes, but is not limited to, loss of data, loss of profits, or business interruption, even if we have been advised of the possibility of such damages."
+            ]
+        },
+        {
+            "title": "User Responsibility",
+            "icon": "fa-solid fa-user-check",
+            "description": [
+                "You are solely responsible for your use of the Service and any outcomes resulting from it. You agree to use the Service at your own risk and discretion."
+            ]
+        },
+        {
+            "title": "Termination for Misuse or Bad Faith",
+            "icon": "fa-solid fa-user-slash",
+            "description": [
+                "We reserve the right to suspend or terminate your access to the Service at our sole discretion, without prior notice, if we believe your use of the Service is not in good faith, violates these Terms, or is otherwise harmful, abusive, deceptive, or disruptive. This includes—but is not limited to—attempts to exploit the Service, interfere with its operation, or use it in ways contrary to its intended purpose."
+            ]
+        },
+        {
+            "title": "Changes to Terms",
+            "icon": "fa-solid fa-edit",
+            "description": [
+                "We reserve the right to modify or discontinue the Service at any time without notice. Continued use of the Service after changes constitutes acceptance of the revised Terms."
+            ]
+        },
+        {
+            "title": "Governing Law",
+            "icon": "fa-solid fa-gavel",
+            "description": [
+                "These Terms shall be governed by and construed in accordance with the laws of California which we operate, without regard to its conflict of law principles."
+            ]
+        }
+    ]
+}

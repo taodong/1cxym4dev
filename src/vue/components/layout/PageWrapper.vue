@@ -2,17 +2,23 @@
     <div class="duotail-page-wrapper"
          :class="noPadding ? `duotail-page-wrapper-no-padding` : ``"
          :id="props.id">
-        <component v-for="sectionInfo in sections"
-                   :is="sectionInfo.component"
-                   :id="sectionInfo.id"/>
+        <component
+            v-for="sectionInfo in sections"
+            :is="sectionInfo.component"
+            :id="sectionInfo.id"
+            :key="sectionInfo.id"
+            :extra ="sectionInfo.extra"
+        />
     </div>
 </template>
 
 <script setup>
 import SectionInfo from "/src/models/SectionInfo.js"
-import {inject, onBeforeMount, ref} from "vue"
+import NavLink from "/src/models/NavLink.js"
+import {inject, onBeforeMount} from "vue"
 
 const currentPageSections = inject("currentPageSections")
+const currentPageNavLinks = inject("currentPageNavLinks")
 
 const props = defineProps({
     id: String,
@@ -21,11 +27,18 @@ const props = defineProps({
         type: Array,
         validator(value) { return value.every(item => item instanceof SectionInfo) },
         required: true
+    },
+    navLinks: {
+        type: Array,
+        validator(value) { return value.every(item => item instanceof NavLink) },
+        required: false,
+        default: () => []
     }
 })
 
 onBeforeMount(() => {
     currentPageSections.value = props.sections
+    currentPageNavLinks.value = props.navLinks || []
 })
 </script>
 

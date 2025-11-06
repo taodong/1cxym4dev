@@ -9,24 +9,24 @@
 <script setup>
 import Navbar from "/src/vue/components/nav/navbar/Navbar.vue"
 import {computed, inject, onMounted, onUnmounted, ref, watch} from "vue"
-import {useRoute, useRouter} from "vue-router"
+import {useRoute} from "vue-router"
 import {useLayout} from "/src/composables/layout.js"
 
 const route = useRoute()
-const router = useRouter()
 const layout = useLayout()
 
 /**
  * @type {{value: SectionInfo[]}}
  */
 const currentPageSections = inject("currentPageSections")
+const currentPageNavLinks = inject("currentPageNavLinks")
 
 const LoaderAnimationStatus = inject("LoaderAnimationStatus")
 const loaderAnimationStatus = inject("loaderAnimationStatus")
 
 const currentSection = ref(null)
 
-const props = defineProps({
+defineProps({
     logo: String,
     label: String
 })
@@ -36,7 +36,7 @@ const linkList = computed(() => {
     if(!sections || !sections.length)
         return []
 
-    return sections.map(section => {
+    var sectionLinkList = sections.map(section => {
         return {
             path: section.hash,
             label: section.name,
@@ -44,6 +44,35 @@ const linkList = computed(() => {
             isActive: currentSection.value?.id === section.id
         }
     }).filter(section => section.label && section.path)
+
+    const navLinks = currentPageNavLinks?.value || []
+
+    // Find a "login" link by id
+    const loginLink = navLinks.find(link => link.id === "login")
+
+    // Map non-login nav links
+    const otherNavLinkList = navLinks
+        .filter(link => link.id !== "login")
+        .map(link => ({
+            path: link.route,
+            label: link.name,
+            faIcon: link.faIcon,
+            isActive: false
+        }))
+
+    // If a home link exists, put it first; then sections; then the rest
+    if (loginLink) {
+        const homeItem = {
+            path: loginLink.route,
+            label: loginLink.name,
+            faIcon: loginLink.faIcon,
+            isActive: false
+        }
+        return [homeItem, ...sectionLinkList, ...otherNavLinkList]
+    }
+
+    // Default order when no home link
+    return [...sectionLinkList, ...otherNavLinkList]
 })
 
 onMounted(() => {

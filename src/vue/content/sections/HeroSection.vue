@@ -1,7 +1,7 @@
 <template>
     <!-- Heading Section -->
     <PageHeader :id="props.id"
-                title="Duotail *Email Address Service*"
+                title="Duotail *Email Address Service*  <br> <span class='text-danger'>!!!THIS IS A DEV FRONT END TEST SITE!!!</span>"
                 subtitle="We offer non-intrusive email addresses to secure your personal mailboxes."
                 logo-url="images/logo/logo-128x128.png"
                 :show-button="true"

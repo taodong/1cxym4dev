@@ -24,6 +24,7 @@ const LoaderAnimationStatus = {
  * Global state FLAGS
  **/
 const currentPageSections = ref([])
+const currentPageNavLinks = ref([])
 const loaderActive = ref(true)
 const loaderPageRefreshCount = ref(0)
 const loaderSmoothTransitionEnabled = ref(true)
@@ -52,6 +53,7 @@ provide("loaderAnimationStatus", loaderAnimationStatus)
 provide("projectModalTarget", projectModalTarget)
 provide("spinnerActive", spinnerActive)
 provide("spinnerMessage", spinnerMessage)
+provide("currentPageNavLinks", currentPageNavLinks)
 
 provide("setSpinnerEnabled", setSpinnerEnabled)
 </script>

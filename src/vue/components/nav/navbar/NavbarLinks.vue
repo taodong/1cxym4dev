@@ -22,10 +22,8 @@
 
 <script setup>
 import {computed, onMounted, ref, watch} from "vue"
-import {useRouter} from "vue-router"
 import Link from "/src/vue/components/generic/Link.vue"
 
-const router = useRouter()
 const props = defineProps({
     items: Array,
     collapsed: Boolean

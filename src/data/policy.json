@@ -1,0 +1,50 @@
+{
+    "privacy": [
+        {
+            "title": "",
+            "icon": "",
+            "description": [
+                "*Our goal is to protect people's privacy. We treat your data as we would our own. Our policy is to collect as less data as possible.*",
+                "The following outlines how we handle your data when you use our services."
+            ]
+        },
+        {
+            "title": "Cookies",
+            "icon": "fa-solid fa-cookie-bite",
+            "description": [
+                "We use cookies for authentication and session management purposes only.",
+                "*No tracking or profiling cookies are used on our platform. We don't sell or share your data with any third parties.*"
+            ]
+        },
+        {
+            "title": "Security",
+            "icon": "fa-solid fa-shield-halved",
+            "description": [
+                "We implemented industry-standard security measures to protect your data from unauthorized access, alteration, disclosure, or destruction. The security measures are constantly reviewed and updated to ensure the best possible protection for your personal information.",
+                "Even though we take strong measures to protect your data, it cannot be guaranteed that unauthorized third parties will never be able to breach these measures or use your personal information for improper purposes."
+            ]
+        },
+        {
+            "title": "Data Retention",
+            "icon": "fa-solid fa-database",
+            "description": [
+                "We retain your personal data only for as long as necessary to provide our services and fulfill the purposes outlined in this policy. When your data is no longer needed, we securely delete or anonymize it."
+            ]
+        },
+        {
+            "title": "User Rights",
+            "icon": "fa-solid fa-user-shield",
+            "description": [
+                "You have the right to access, correct, or delete your personal data. You can also object to or restrict certain processing of your data. To exercise these rights, please contact us at *support@duotail.com*"
+            ]
+        },
+        {
+            "title": "Links to Other Websites",
+            "icon": "fa-solid fa-link",
+            "description": [
+                "Our platform may contain links to third-party websites. We are not responsible for the privacy practices of these websites. We encourage you to read the privacy policies of any third-party websites you visit.",
+                "*We do not endorse or affiliate with any third-party websites.*"
+            ]
+        }
+    ]
+}
